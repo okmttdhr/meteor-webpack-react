@@ -5,12 +5,18 @@ import BlazeTemplate from './BlazeTemplate';
 import {Users, Posts} from 'collections';
 import './App.css';
 
+Meteor.methods({
+  sayHello() {
+    return 'Hello from Meteor method!';
+  },
+});
+
 Meteor.call('sayHello', function(err, res) {
   console.log(res);
 });
 
-var Template = {
-  loginButtons: 'any'
+const Template = {
+  loginButtons: 'loginButtons',
 };
 
 @reactMixin.decorate(ReactMeteorData)

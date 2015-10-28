@@ -4,8 +4,8 @@
 
 /* global Meteor */
 
-Meteor.methods({
-  sayHello() {
-    return 'Hello from Meteor method!';
-  },
-});
+// Meteor.methods({
+//   sayHello() {
+//     return 'Hello from Meteor method!';
+//   },
+// });
