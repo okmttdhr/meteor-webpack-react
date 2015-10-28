@@ -16,7 +16,3 @@ if (!Posts.find().fetch().length) {
 Npm.require;
 Assets;
 require('fs').readFile.call;
-
-console.log('\n\nRunning on server only');
-console.log('There are # posts:', Posts.find().fetch().length);
-console.log('React SSR:', React.renderToString(<App/>));
