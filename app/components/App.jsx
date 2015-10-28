@@ -9,7 +9,7 @@ Meteor.call('sayHello', function(err, res) {
   console.log(res);
 });
 
-if (Meteor.isServer) {
+if (!Meteor.isServer) {
   // Template does not support server side
   var Template = {
     loginButtons: 'any'
